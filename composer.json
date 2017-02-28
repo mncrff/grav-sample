@@ -46,7 +46,10 @@
         "exclude": ["VERSION"]
     },
     "scripts": {
-        "post-create-project-cmd": "bin/grav install",
+        "post-create-project-cmd": [
+            "bin/grav install",
+            "bin/gpm install admin"
+        ],
         "test": "vendor/bin/codecept run unit",
         "test-windows": "vendor\\bin\\codecept run unit"
     },
