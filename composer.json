@@ -47,8 +47,8 @@
     },
     "scripts": {
         "custom-setup-script": [
-            "bin/grav install",
-            "bin/gpm install admin"
+            "php bin/grav install",
+            "php bin/gpm install admin"
         ],
         "test": "vendor/bin/codecept run unit",
         "test-windows": "vendor\\bin\\codecept run unit"
