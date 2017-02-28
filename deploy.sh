@@ -80,6 +80,7 @@ fi
 if [ -e "$DEPLOYMENT_TARGET/composer.json" ]; then
   cd "$DEPLOYMENT_TARGET"
   eval php composer.phar install
+  eval php bin/grav install
   # eval php composer.phar run-script custom-setup-script
   exitWithMessageOnError "composer failed"
   cd - > /dev/null
