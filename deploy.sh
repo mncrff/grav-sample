@@ -80,7 +80,7 @@ fi
 if [ -e "$DEPLOYMENT_TARGET/composer.json" ]; then
   cd "$DEPLOYMENT_TARGET"
   eval php composer.phar install
-  eval php composer.phar create-project
+  eval php composer.phar run-script custom-setup-script
   exitWithMessageOnError "composer failed"
   cd - > /dev/null
 fi

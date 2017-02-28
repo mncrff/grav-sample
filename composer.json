@@ -46,7 +46,7 @@
         "exclude": ["VERSION"]
     },
     "scripts": {
-        "post-create-project-cmd": [
+        "custom-setup-script": [
             "bin/grav install",
             "bin/gpm install admin"
         ],
